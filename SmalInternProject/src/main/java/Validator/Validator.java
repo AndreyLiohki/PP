@@ -39,7 +39,8 @@ public class Validator {
                 || expression.endsWith("+") || expression.endsWith("-") || expression.endsWith("*") || expression.endsWith("/")) {
             return false;
         }
-        
+
         return true;
     }
+
 }

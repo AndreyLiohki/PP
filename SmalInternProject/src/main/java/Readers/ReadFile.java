@@ -1,5 +1,5 @@
 package Readers;
 
 public interface ReadFile {
-    void readFile();
+    String[] readFile(String filePath);
 }
