@@ -11,7 +11,6 @@ import java.nio.file.Paths;
 public class FileProcessor {
     private Decompressor decompressor;
     private Decryptor decryptor;
-
     public FileProcessor() {
         this.decompressor = new Decompressor();
         this.decryptor = new Decryptor();
