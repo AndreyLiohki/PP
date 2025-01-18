@@ -5,7 +5,6 @@ import factory.XMLFileReaderFactory;
 import factory.YAMLFileReaderFactory;
 import factory.PlainTextFileReaderFactory;
 import org.junit.Test;
-
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
