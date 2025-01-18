@@ -12,14 +12,18 @@
         <maven.compiler.source>22</maven.compiler.source>
         <maven.compiler.target>22</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.surefire.plugin.version>2.22.2</maven.surefire.plugin.version>
-        <surefire.argLine>-XX:+EnableDynamicAgentLoading</surefire.argLine>
     </properties>
     <dependencies>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
             <version>2.14.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jmockit</groupId>
+            <artifactId>jmockit</artifactId>
+            <version>1.49</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.yaml</groupId>
