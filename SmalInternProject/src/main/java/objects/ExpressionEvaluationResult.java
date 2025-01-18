@@ -2,7 +2,6 @@ package objects;
 
 public class ExpressionEvaluationResult {
     private String result;
-
     public ExpressionEvaluationResult() {
     }
     public ExpressionEvaluationResult(String result) {

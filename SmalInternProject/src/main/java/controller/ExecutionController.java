@@ -1,5 +1,6 @@
 package controller;
 
+import Singleton.ExpressionValidatorHandler;
 import factory.FileReaderFactory;
 import factory.FileReaderFactoryProvider;
 import objects.ExpressionEvaluationResult;
@@ -15,7 +16,14 @@ public class ExecutionController {
         ArrayList<ExpressionEvaluationResult> answers = new ArrayList<>();
 
         for(String expression: expressions){
-            answers.add(ExpressionProcessorHandler.getInstance().evaluate(expression));
+            if(ExpressionValidatorHandler.getInstance().isValidExpression(expression)){
+                answers.add(ExpressionProcessorHandler.getInstance().evaluate(expression));
+            }else{
+                ExpressionEvaluationResult wrongEvaluationResult = new ExpressionEvaluationResult();
+                String wrongAnswer = "Expression - " + expression + " is not valid";
+                wrongEvaluationResult.setResult(wrongAnswer);
+                answers.add(wrongEvaluationResult);
+            }
         }
         return answers;
     }

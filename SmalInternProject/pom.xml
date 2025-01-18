@@ -12,6 +12,8 @@
         <maven.compiler.source>22</maven.compiler.source>
         <maven.compiler.target>22</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.surefire.plugin.version>2.22.2</maven.surefire.plugin.version>
+        <surefire.argLine>-XX:+EnableDynamicAgentLoading</surefire.argLine>
     </properties>
     <dependencies>
         <dependency>
@@ -48,6 +50,18 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
             <version>5.3.9</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>5.4.0</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 

@@ -15,6 +15,10 @@ public class FileProcessor {
         this.decompressor = new Decompressor();
         this.decryptor = new Decryptor();
     }
+    public FileProcessor(Decompressor decompressor, Decryptor decryptor) {
+        this.decompressor = decompressor;
+        this.decryptor = decryptor;
+    }
     public byte[] processFile(String filePath) throws Exception {
         byte[] fileData = readFile(filePath);
         if (isCompressed(filePath)) {
