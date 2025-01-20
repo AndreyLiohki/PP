@@ -1,0 +1,5 @@
+Result of evaluating arithmetic expression using Stack 7.0
+Result of evaluating arithmetic expression using Regular Expression 7.0
+Result of evaluating arithmetic expression using Inner Library 7.0
+
+
